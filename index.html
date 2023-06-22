@@ -6,13 +6,103 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Isobel Butler</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
     <main>
+      <nav>
+        <!-- Generate <> with JS -->
+        <ul><a href="#">About</a></ul>
+        <ul><a href="#">Projects</a></ul>
+        <ul><a href="#">Contact</a></ul>
+      </nav>
 
+      <!-- Think about which headings are semantically most important -->
+      <section>
+        <h1>isobel</h1>
+        <h2>
+          Lorem ipsum dolor sit amet, consectetur adipiscing 
+          elit, sed do eiusmod tempor incididunt ut labore et 
+          dolore magna aliqua.
+        </h2>
+        <!-- Tagged as link vs button as is only aesthetically a button -->
+        <a href="#">Contact</a>
+      </section>
+
+      <section>
+        <h3>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </h3>
+
+        <!-- Could generate this in JS instead -->
+        <div class="card-container">
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+        </div>
+      </section>
+
+      <section>
+        <p>Profile</p>
+      </section>
+
+      <section>
+        <h4>About</h4>
+        <p>
+          My name’s Isobel (she/her). For the past 4 years I’ve worked in the 
+          Art Department in TV. I left the industry this year after a final.
+
+          Series on MasterChef as Assistant Art Director, and have since been 
+          building my application for Founders and Coders whilst working 
+          in a plant shop.
+        </p>
+
+        <h4>Skills</h4>
+        <ul>
+          <li>
+            <p>Dolor sit amet</p>
+          </li>
+          <li>
+            <p>Dolor sit amet</p>
+          </li>
+          <li>
+            <p>Dolor sit amet</p>
+          </li>
+          <li>
+            <p>Dolor sit amet</p>
+          </li>
+          <li>
+            <p>Dolor sit amet</p>
+          </li>
+        </ul>
+      </section>
+        <h4>
+          Contact
+        </h4>
+
+        <form>
+            <label for="name">Email address</label>
+            <input type="text" class="form-control" id="form-name">
+
+            <label for="name">Telephone</label>
+            <input type="tel" class="form-control" id="form-tel">
+
+            <label for="name">Email</label>
+            <input type="email" class="form-control" id="form-email">
+
+            <label for="name">Message</label>
+            <input type="text" class="form-control" id="form-message">
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+      <section>
 
     </main>
 	<script src="js/main.js"></script>
+  
   </body>
 </html>
