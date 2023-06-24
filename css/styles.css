@@ -1,4 +1,35 @@
+:root {
+    --light-grey-bg: #f5f5f5;
+    --darker-grey-bg: #E9E9E9;
+    --deeper-green: #44AF94;
+}
+
 * {
     box-sizing: border-box;
 }
 
+section {
+    padding: 1.5rem;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.hero {
+    background-color: var(--darker-grey-bg);
+}
+
+.projects {
+    background-color: var(--light-grey-bg);
+}
+
+.about {
+    background-color: var(--darker-grey-bg);
+}
+
+.contact {
+    background-color: var(--light-grey-bg);
+}
+
+.divider {
+    background-color: var(--deeper-green);
+}
