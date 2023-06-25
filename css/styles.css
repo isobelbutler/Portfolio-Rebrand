@@ -4,7 +4,7 @@
     --darker-grey-bg: #E9E9E9;
     --deeper-green: #44AF94;
     --lighter-green: #7BD4C1;
-    --lime: #EEF20C;
+    --brick: #FA5B52;
 
     /* padding */
     --xxs-padding: 0.25rem;
@@ -14,6 +14,9 @@
     /* sizing */
     --square: 320px;
     --sq-offset: -120px;
+
+    /* fonts */
+    --s-letter-spacing: -0.3px;
 }
 
 * {
@@ -49,6 +52,10 @@ h2 {
     font-size: 1.5rem;
 }
 
+h2, h3, p, a {
+    letter-spacing: var(--s-letter-spacing);
+}
+
 /* repeatables */
 
 .black-border {
@@ -63,6 +70,11 @@ h2 {
 
 .italic {
     font-style: italic;
+}
+
+.round-image {
+    aspect-ratio: 1;
+    object-fit: contain;
 }
 
 /* general */
@@ -130,7 +142,7 @@ nav a:last-child {
     bottom: calc(var(--square) * 1);
     right: var(--sq-offset);
     background-color: #fff;
-    color: var(--lime);
+    color: var(--brick);
 }
 
 .square p {
@@ -143,10 +155,52 @@ nav a:last-child {
     padding: var(--xs-padding) var(--s-padding);
 }
 
+/* projects */
+
 .projects {
     background-color: var(--light-grey-bg);
 }
 
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.card {
+    width: calc((100% / 3) - (2 * var(--xs-padding)));
+    margin: var(--xs-padding);
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "card-heading card-heading"
+        "card-heading card-heading"
+        "card-desc card-btn";
+}
+
+.card > * {
+    padding: var(--xs-padding);
+}
+.card-heading { 
+    grid-area: card-heading;
+    border-radius: 50%;
+    width: 80%;
+    background-color: #44AF94;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+}
+
+.card-desc { 
+    grid-area: card-desc;
+    justify-self: start;
+}
+
+.card-btn { grid-area: card-btn;
+    justify-self: end; 
+    align-self: center;
+}
 .about {
     background-color: var(--darker-grey-bg);
 }
