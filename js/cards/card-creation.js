@@ -59,11 +59,7 @@ function getCards(card, i) {
 cards.forEach(getCards);
 cardContainer.innerHTML = cardHtml;
 
-cardContainer.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('click', (e) => {
-      card.classList.toggle('flipCard');
-    });
-  });
+
 
 function setCardHeight() {
     const cardFront = document.querySelector('.card-front');
