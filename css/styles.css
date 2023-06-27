@@ -178,6 +178,7 @@ nav a:last-child {
     transform-style: preserve-3d;
     transition: all 0.8s ease;
     height: 300px;
+    /* overflow: auto; */
 }
 
 .card-front, .card-back {

@@ -2,7 +2,8 @@
 
 let cardHtml = '';
 const cardContainer = document.querySelector('.card-container');
-const cardInner = document.querySelector('.card');
+const cardInner = cardContainer.querySelectorAll('.card');
+
 
 // Update the card here
 let cards = [
@@ -56,10 +57,21 @@ function getCards(card, i) {
 
 // Iterates through the card array and renders the front of each card on the DOM
 cards.forEach(getCards);
-document.querySelector('.card-container').innerHTML = cardHtml;
+cardContainer.innerHTML = cardHtml;
 
 cardContainer.querySelectorAll('.card').forEach(card => {
     card.addEventListener('click', (e) => {
       card.classList.toggle('flipCard');
     });
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const cardFront = document.querySelector('.card-front');
+    const cardFrontHeight = cardFront.offsetHeight;
+  
+    console.log(cardFrontHeight);
+
+    cardContainer.querySelectorAll('.card').forEach(card => {
+        card.style.height = cardFrontHeight + 'px';
+      });
   });
