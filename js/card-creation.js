@@ -65,29 +65,21 @@ cardContainer.querySelectorAll('.card').forEach(card => {
     });
   });
 
-  document.addEventListener('DOMContentLoaded', function() {
+function setCardHeight() {
     const cardFront = document.querySelector('.card-front');
-    const card = cardContainer.querySelector('.card');  
-
-
-    function setCardHeight() {
+    const cardContainer = document.querySelector('.card-container');
     const cardFrontHeight = cardFront.offsetHeight;
-    console.log(cardFrontHeight);
-
+    console.log('Card height: ' + cardFrontHeight + 'px');
     cardContainer.querySelectorAll('.card').forEach(card => {
-        card.style.height = cardFrontHeight + 'px';
-      });
+      card.style.height = cardFrontHeight + 'px';
+    });
   }
   
-  // Initial height calculation
-  setCardHeight();
+function initializeCardHeight() {
+    setCardHeight();
+    window.addEventListener('resize', setCardHeight);
+  }
   
-  // Recalculate height when the window is resized
-  window.addEventListener('resize', setCardHeight);
-});
+document.addEventListener('DOMContentLoaded', initializeCardHeight);
 
-
-  
-  
-  
-  
+ 
