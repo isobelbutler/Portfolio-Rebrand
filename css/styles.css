@@ -161,15 +161,28 @@ nav a:last-child {
     background-color: var(--light-grey-bg);
 }
 
+
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    /* width: 100%; */
+    justify-content: space-between;
+   /* transform: translate(-50%, -50%); */
 }
+
 .card {
     width: calc((100% / 3) - (2 * var(--xs-padding)));
     margin: var(--xs-padding);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    height: 300px;
+}
+
+.card-front, .card-back {
     display: grid;
+    width: 100%;
     grid-template-columns: 1.5fr 0.5fr;
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
@@ -177,19 +190,35 @@ nav a:last-child {
         "card-heading card-heading"
         "card-heading card-heading"
         "card-desc card-btn";
+    position: absolute;
+    
+    backface-visibility: hidden;
+
+    /* transform: rotateY(180deg); */
 }
 
+.flipCard {
+    transform: rotateY(180deg);
+}
+
+.card-back {
+    /* backface-visibility: hidden; */
+    transform: rotateY(180deg);
+
+}
 .card > * {
     padding: var(--xs-padding);
 }
+
 .card-heading { 
     grid-area: card-heading;
     border-radius: 50%;
-    width: 80%;
+    width: 100%;
     background-color: #44AF94;
     justify-self: center;
     align-self: center;
     align-items: center;
+    margin: var(--s-padding);
 }
 
 .card-desc { 
@@ -201,6 +230,8 @@ nav a:last-child {
     justify-self: end; 
     align-self: center;
 }
+
+
 .about {
     background-color: var(--darker-grey-bg);
 }
