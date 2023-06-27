@@ -4,8 +4,6 @@ let cardHtml = '';
 const cardContainer = document.querySelector('.card-container');
 const cardInner = cardContainer.querySelectorAll('.card');
 
-
-
 // Update the card here
 let cards = [
     {
