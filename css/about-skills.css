@@ -1,0 +1,41 @@
+/* grid layout */
+
+.about-grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto auto auto;
+    gap: var(--m-padding); 
+    grid-template-areas: 
+    "about-title about-title about-title"
+    "about-body about-body about-arrow"
+    "skills-title skills-list skills-list"; 
+}
+.about-title { grid-area: about-title; }
+.about-body { grid-area: about-body; }
+.about-arrow { grid-area: about-arrow; }
+.skills-title { grid-area: skills-title; }
+.skills-list { grid-area: skills-list; }
+
+/* styling */
+.about-body p,
+.skills-list {
+    font-weight: 300;
+    font-size: 1.75rem;
+}
+
+.skills-list {
+    column-count: 2;
+}
+
+.skills-list li p {
+    display: inline-block;
+}
+
+.about-arrow {
+    justify-self: center;
+    font-size: 6rem;
+}
+
+.about-grid > * {
+    align-self: center;
+}

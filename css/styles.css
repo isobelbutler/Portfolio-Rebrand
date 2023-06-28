@@ -64,6 +64,10 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    font-size: 2.5rem;
+}
+
 h2, h3, p, a {
     letter-spacing: var(--s-letter-spacing);
 }
@@ -160,4 +164,8 @@ nav a:last-child {
 
 .divider {
     background-color: var(--deeper-green);
+    /* background-image: url(../images/california.png);
+    background-size: cover;
+    background-position: center; */
+    min-height: 50vh;
 }
