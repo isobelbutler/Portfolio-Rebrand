@@ -10,56 +10,56 @@ let cards = [
     title: 'Space News',
     description: 'API Requests',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    imageFileName: 'application-website.png',
+    imageFileName: 'space-news-form.png',
     link: 'https://isobelbutler.github.io/Space-News-Project/'
 
 },{
     title: 'Travel Agency',
     description: 'Git and Github',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    imageFileName: 'application-website.png',
+    imageFileName: 'travel-agency.png',
     link: 'https://fac28.github.io/Thornberry-Adventure-Agency/'
 
 },{
     title: 'Soak Services',
     description: 'Client Website',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    imageFileName: 'application-website.png',
+    imageFileName: 'soak-services.png',
     link: 'https://www.soak.services/'
 
 },{
     title: 'Wealden Green Party',
     description: 'Client Website',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    imageFileName: 'application-website.png',
+    imageFileName: 'wealden.png',
     link: 'https://wealden.greenparty.org.uk/',
 
 },{
     title: 'Bootcamp Application Website',
     description: 'F&C Application',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    imageFileName: 'elephants-grazing.jpeg',
+    imageFileName: 'application-website.png',
     link: 'https://isobelbutler.github.io/Website/',
 
 },{
     title: 'Farming Game',
     description: 'F&C Application',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    imageFileName: 'application-website.png',
+    imageFileName: 'farm-game.png',
     link: 'https://isobelbutler.github.io/Game/',
 
 },{
     title: 'Movie Data',
     description: 'F&C Application',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    imageFileName: 'application-website.png',
+    imageFileName: 'movie-data.png',
     link: 'https://isobelbutler.github.io/Movie-Data/',
 
 },{
     title: 'Hobby Page',
     description: 'F&C Application',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    imageFileName: 'application-website.png',
+    imageFileName: 'hobby-page.png',
     link: 'https://isobelbutler.github.io/Hobby-Page/',
 
 }
