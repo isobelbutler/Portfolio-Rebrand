@@ -166,26 +166,13 @@ nav a:last-child {
     background-color: var(--light-grey-bg);
 }
 
-.about {
-    /* background-color: var(--darker-grey-bg); */
-    /* background-image: url(../images/snowy-mint.png); */
-    /* background-size: cover; */
-}
-
 .contact {
-    /* background-color: var(--light-green-teal); */
-    background-color: #E4F1EF;
-}
-
-.divider {
-    /* background-color: var(--brick); */
     background-image: url(../images/snowy-mint.png);
     background-size: cover;
-
-
-    /* background-color: #f1e9e4; */
-    /* background-image: url(../images/california.png);
-    background-size: cover;
-    background-position: center; */
-    min-height: 50vh;
 }
+
+/* .divider {
+    background-image: url(../images/snowy-mint.png);
+    background-size: cover;
+    min-height: 50vh;
+} */

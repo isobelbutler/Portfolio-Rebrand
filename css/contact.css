@@ -2,14 +2,18 @@
     position: relative;
 }
 
+.contact > * {
+        margin: 0 auto;
+}
+
 form > * {
     display: block;
     width: 70%;
-    margin: var(--xs-padding) 0;
+    margin: var(--xs-padding) auto;
 }
 
 .form-control {
-    background-color: #D7EAE8;
+    background-color: white;
     border: none;
     border-radius: 10px;
     padding: var(--xs-padding);
