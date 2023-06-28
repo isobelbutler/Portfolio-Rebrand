@@ -82,7 +82,7 @@ function getCards(card, i) {
                 <p class="card-heading-back">${cards[i].title}</p>
                 <div class="card-circle"></div>
                 <p class="card-project-info">${cards[i].info}</p>
-                <img src="../images/${cards[i].imageFileName}" class="card-image" alt="Project website renderd onto laptop">
+                <img src="images/${cards[i].imageFileName}" class="card-image" alt="Project website renderd onto laptop">
 
                 <p class="card-desc">${cards[i].description}</p>
                 <a href="#" class="card-btn round-image"><p>&#8594</p></a>
