@@ -168,8 +168,8 @@ nav a:last-child {
 
 .about {
     /* background-color: var(--darker-grey-bg); */
-    background-image: url(../images/snowy-mint.png);
-    background-size: cover;
+    /* background-image: url(../images/snowy-mint.png); */
+    /* background-size: cover; */
 }
 
 .contact {
@@ -178,7 +178,12 @@ nav a:last-child {
 }
 
 .divider {
-    background-color: var(--brick);
+    /* background-color: var(--brick); */
+    background-image: url(../images/snowy-mint.png);
+    background-size: cover;
+
+
+    /* background-color: #f1e9e4; */
     /* background-image: url(../images/california.png);
     background-size: cover;
     background-position: center; */
