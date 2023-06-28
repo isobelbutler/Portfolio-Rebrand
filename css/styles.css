@@ -150,7 +150,9 @@ nav a:last-child {
 .sq-one {
     bottom: calc((var(--square) * -0.2));
     right: calc((2* var(--square)) + var(--sq-offset));
-    background-color: var(--lighter-green);
+    /* background-color: var(--lighter-green); */
+    background-image: url(../images/wisteria.png);
+    background-size: cover;
 }
 
 .sq-two {
@@ -186,7 +188,7 @@ nav a:last-child {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-evenly; */
 }
 
 .card {
@@ -195,7 +197,8 @@ nav a:last-child {
     position: relative;
     transform-style: preserve-3d;
     transition: all 0.8s ease;
-    box-shadow: 10px 10px 16px 0px rgba(199,199,199,1);
+    box-shadow: 0px 10px 16px 0px rgba(199,199,199,1);
+    border-radius: 10px;
 }
 
 .card-front, .card-back {
@@ -217,6 +220,9 @@ nav a:last-child {
         "card-heading card-heading"
         "card-heading card-heading"
         "card-desc card-btn";
+    background-image: url('../images/snowy-mint.png');
+    background-size: cover;
+    
 }
 
 .card-back {

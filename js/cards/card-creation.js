@@ -45,7 +45,7 @@ let cards = [
     title: 'Farming Game',
     description: 'F&C Application',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    imageFileName: 'elephants-grazing.jpeg'
+    imageFileName: 'elephants-grazing.jpeg',
     link: 'https://isobelbutler.github.io/Game/',
 
 },{
@@ -69,7 +69,7 @@ let cards = [
 // Creates the card HTML for the front of each card
 function getCards(card, i) {
     cardHtml += `
-        <div class="card black-border">
+        <div class="card ">
             <div class="card-front">
                 <div class="card-heading center round-image">
                     <p>${cards[i].title}</p>

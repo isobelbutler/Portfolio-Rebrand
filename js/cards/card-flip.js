@@ -1,3 +1,11 @@
+const firstCard = cardContainer.querySelector('.card');
+
+function firstCardToggleOn () {
+  firstCard.classList.toggle('flipCard');
+}
+
+firstCardToggleOn();
+
 cardContainer.querySelectorAll('.card').forEach(card => {
   card.addEventListener('mouseenter', () => {
     card.classList.toggle('flipCard');
