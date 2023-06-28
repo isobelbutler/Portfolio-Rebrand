@@ -10,28 +10,28 @@ let cards = [
     title: 'Space News',
     description: 'API Requests',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    imageFileName: 'elephants-grazing.jpeg',
+    imageFileName: 'application-website.png',
     link: 'https://isobelbutler.github.io/Space-News-Project/'
 
 },{
     title: 'Travel Agency',
     description: 'Git and Github',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    imageFileName: 'elephants-grazing.jpeg',
+    imageFileName: 'application-website.png',
     link: 'https://fac28.github.io/Thornberry-Adventure-Agency/'
 
 },{
     title: 'Soak Services',
     description: 'Client Website',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    imageFileName: 'elephants-grazing.jpeg',
+    imageFileName: 'application-website.png',
     link: 'https://www.soak.services/'
 
 },{
     title: 'Wealden Green Party',
     description: 'Client Website',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    imageFileName: 'elephants-grazing.jpeg',
+    imageFileName: 'application-website.png',
     link: 'https://wealden.greenparty.org.uk/',
 
 },{
@@ -45,21 +45,21 @@ let cards = [
     title: 'Farming Game',
     description: 'F&C Application',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    imageFileName: 'elephants-grazing.jpeg',
+    imageFileName: 'application-website.png',
     link: 'https://isobelbutler.github.io/Game/',
 
 },{
     title: 'Movie Data',
     description: 'F&C Application',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    imageFileName: 'elephants-grazing.jpeg',
+    imageFileName: 'application-website.png',
     link: 'https://isobelbutler.github.io/Movie-Data/',
 
 },{
     title: 'Hobby Page',
     description: 'F&C Application',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    imageFileName: 'elephants-grazing.jpeg',
+    imageFileName: 'application-website.png',
     link: 'https://isobelbutler.github.io/Hobby-Page/',
 
 }

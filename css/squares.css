@@ -1,0 +1,35 @@
+
+.square {
+    width: var(--square);
+    height: var(--square);
+    background-color: #44AF94;
+    position: absolute;
+}
+
+.sq-one {
+    bottom: calc((var(--square) * -0.2));
+    right: calc((2* var(--square)) + var(--sq-offset));
+    /* background-color: var(--lighter-green); */
+    background-image: url(../images/wisteria.png);
+    background-size: cover;
+}
+
+.sq-two {
+    bottom: calc((var(--square) * 0.4));
+    right: calc(var(--square) + var(--sq-offset));
+    background-color: var(--deeper-green);
+    color: #fff;
+}
+
+.sq-three {
+    bottom: calc(var(--square) * 1);
+    right: var(--sq-offset);
+    background-color: #fff;
+    color: var(--brick);
+}
+
+.square p {
+    font-size: 13em;
+    text-align: center;
+    margin: auto 0;
+}
