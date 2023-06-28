@@ -1,5 +1,9 @@
 cardContainer.querySelectorAll('.card').forEach(card => {
-  card.addEventListener('mouseover', () => {
+  card.addEventListener('mouseenter', () => {
+    card.classList.toggle('flipCard');
+  });
+
+  card.addEventListener('mouseleave', () => {
     card.classList.toggle('flipCard');
   });
 

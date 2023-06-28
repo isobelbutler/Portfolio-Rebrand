@@ -7,26 +7,48 @@ const cardInner = cardContainer.querySelectorAll('.card');
 // Update the card here
 let cards = [
     {
-    name: 'front',
-    title: 'HTML',
+    title: 'Space News',
     description: 'API Requests',
+    info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+
 },{
-    title: 'HTML',
-    description: 'API Requests',
+    title: 'Travel Agency',
+    description: 'Git and Github',
+    info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+
 },{
-    name: 'front',
-    title: 'Beak',
-    description: 'API Requests',
+    title: 'Soak Services',
+    description: 'Client Website',
+    info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+
 },{
-    title: 'HTML',
-    description: 'API Requests',
+    title: 'Wealden Green Party',
+    description: 'Client Website',
+    info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+
 },{
-    name: 'front',
-    title: 'HTML',
-    description: 'API Requests',
+    title: 'Personal Website',
+    description: 'F&C Application',
+    info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
 },{
-    title: 'HTML',
-    description: 'API Requests',
+    title: 'Farming Game',
+    description: 'F&C Application',
+    info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+
+},{
+    title: 'Movie Data',
+    description: 'F&C Application',
+    info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+
+},{
+    title: 'Hobby Page',
+    description: 'F&C Application',
+    info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+
+},{
+    title: 'Wealden Green Party',
+    description: 'Client Website',
+    info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
 }
 ]
 
@@ -39,19 +61,22 @@ function getCards(card, i) {
                     <p>${cards[i].title}</p>
                 </div>
                 <p class="card-desc">${cards[i].description}</p>
-                <a href="#" class="card-btn action-button">&#8594</a>
+                <a href="#" class="card-btn round-image"><p>&#8594</p></a>
             </div>
 
             <div class="card-back">
-                <div class="card-heading center round-image">
-                    <p>${cards[i].title} BACK </p>
-                </div>
-                <p class="card-desc">${cards[i].description} BACK</p>
-                <a href="#" class="card-btn action-button">&#8594</a>
+                <p class="card-heading-back">${cards[i].title}</p>
+                <div class="card-circle"></div>
+                <p class="card-project-info">${cards[i].info}</p>
+                <img src="../../images/elephants-grazing.jpeg" class="card-image">
+
+                <p class="card-desc">${cards[i].description}</p>
+                <a href="#" class="card-btn round-image"><p>&#8594</p></a>
+
+                
             </div>
         </div>
     `
-    
 }
 
 // Iterates through the card array and renders the front of each card on the DOM
