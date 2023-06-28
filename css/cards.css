@@ -34,14 +34,14 @@
         "card-heading card-heading"
         "card-heading card-heading"
         "card-desc card-btn";
-    background-image: url('../images/snowy-mint.png');
+    background-image: url('../images/buttercup.png');
     background-size: cover;
     
 }
 
 .card-back {
     height: 100%;
-    background-color: #EEF20C;
+    background-color: var(--brick);
     transform: rotateY(180deg);
     grid-template-columns: 1.5fr 0.5fr; 
     grid-template-rows:   0.5fr 1fr 1.5fr 0.5fr; ; 

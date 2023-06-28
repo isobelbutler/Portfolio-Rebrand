@@ -1,0 +1,53 @@
+.contact {
+    position: relative;
+}
+
+form > * {
+    display: block;
+    width: 70%;
+    margin: var(--xs-padding) 0;
+}
+
+.form-control {
+    background-color: #D7EAE8;
+    border: none;
+    border-radius: 10px;
+    padding: var(--xs-padding);
+}
+
+label, button[type="submit"] {
+    margin-top: var(--s-padding);
+}
+
+label, input, select, text {
+    color: black;
+    font-style: italic;
+}
+
+::placeholder {
+    /* color: #80C0B6; */
+    /* color: var(--brick); */
+
+}
+
+button[type="submit"] {
+    background-color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--brick);
+    transition: 0.5s ease;
+}
+
+.contact h5 {
+    /* color: #64AEA3; */
+    width: 70%;
+}
+
+.green-phone {
+    max-width: 400px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+}
+

@@ -25,7 +25,7 @@
     bottom: calc(var(--square) * 1);
     right: var(--sq-offset);
     background-color: #fff;
-    color: var(--brick);
+    color: var(--lime);
 }
 
 .square p {
