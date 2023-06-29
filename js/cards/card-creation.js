@@ -97,8 +97,6 @@ function getCards(card, i) {
 cards.forEach(getCards);
 cardContainer.innerHTML = cardHtml;
 
-
-
 function setCardHeight() {
     const cardFront = document.querySelector('.card-front');
     const cardContainer = document.querySelector('.card-container');
