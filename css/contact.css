@@ -25,7 +25,7 @@ label, button[type="submit"] {
 
 label, input, select, text {
     color: black;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 ::placeholder {
