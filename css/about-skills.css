@@ -4,7 +4,7 @@
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: auto auto auto;
-    gap: var(--m-padding); 
+    /* gap: var(--m-padding);  */
     grid-template-areas: 
     "about-title about-title about-title"
     "about-body about-body about-arrow"
@@ -20,16 +20,17 @@
 .about-body p,
 .skills-list {
     font-weight: 300;
-    font-size: 1.75rem;
+    font-size: 1.2rem;
+    line-height: 1.25;
 }
 
-.skills-list {
+/* .skills-list {
     column-count: 2;
-}
+} */
 
-.skills-list li p {
+/* .skills-list li p {
     display: inline-block;
-}
+} */
 
 .about-arrow {
     justify-self: center;

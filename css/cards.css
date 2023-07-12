@@ -34,7 +34,7 @@
         "card-heading card-heading"
         "card-heading card-heading"
         "card-desc card-btn";
-    background-image: url('../images/buttercup.png');
+    background-image: url('../images/snowy-mint.png');
     background-size: cover;
     
 }
@@ -48,7 +48,7 @@
     grid-template-columns: 1.5fr 0.5fr; 
     grid-template-rows:   0.5fr 1fr 1.5fr 0.5fr; ; 
     grid-template-areas: 
-    "card-heading-back card-circle"
+    "card-heading-back card-heading-back"
     "card-project-info card-project-info"
     "card-image card-image"
     "card-desc card-btn"; 
@@ -71,17 +71,25 @@
     grid-area: card-heading;
     border-radius: 50%;
     width: 100%;
-    background-color: #fff;
+    /* background-color: #fff; */
     justify-self: center;
     align-self: center;
     align-items: center;
     margin: var(--s-padding);
+    /* padding: var(--s-padding); */
 }
 
-.card-heading p {
-    font-size: 2rem;
-    font-style: italic;
-    text-align: center;
+.card-heading img {
+    width: inherit;
+}
+
+.card-heading p, .card-heading-back, .card-desc {
+    font-size: 1.25rem;
+    letter-spacing: -1.5px;
+    text-transform: capitalize;
+    font-weight: 500;
+    /* font-style: italic; */
+    /* text-align: center; */
 }
 
 .card-desc { 
@@ -97,8 +105,12 @@
     /* padding: var(--xxs-padding) var(--xs-padding); */
 }
 
-.card-btn p {
+.card-btn p, .card-btn img {
     margin: calc(var(--xs-padding) * 0.5);
+}
+
+.card-btn img {
+    width: 1rem;
 }
 
 /* card back elements */
@@ -126,4 +138,8 @@
 }
 .card-back .card-image { 
     width: inherit;   
+}
+
+.card-project-info {
+    font-weight: 300;
 }

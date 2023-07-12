@@ -6,36 +6,41 @@ const cardInner = cardContainer.querySelectorAll('.card');
 
 // Update the card here
 let cards = [
-    {
-    title: 'Space News',
-    description: 'API Requests',
+    {title: 'Reminders App',
+    description: 'F&C Project: Writing Tests',
+    info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    imageFileName: 'reminders2.png',
+    link: 'https://eunbyulna.github.io/FAC-TEST/'
+}, {
+    title: 'API Requests',
+    description: 'F&C Project: HTTP',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     imageFileName: 'space-news-form.png',
     link: 'https://isobelbutler.github.io/Space-News-Project/'
 
 },{
     title: 'Travel Agency',
-    description: 'Git and Github',
+    description: 'F&C Project: Git and GitHub',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     imageFileName: 'travel-agency.png',
     link: 'https://fac28.github.io/Thornberry-Adventure-Agency/'
 
 },{
     title: 'Soak Services',
-    description: 'Client Website',
+    description: 'Professional Project',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     imageFileName: 'soak-services.png',
     link: 'https://www.soak.services/'
 
 },{
     title: 'Wealden Green Party',
-    description: 'Client Website',
+    description: 'Professional Project',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     imageFileName: 'wealden.png',
     link: 'https://wealden.greenparty.org.uk/',
 
 },{
-    title: 'Bootcamp Application Website',
+    title: 'Personal Website',
     description: 'F&C Application',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     imageFileName: 'application-website.png',
@@ -49,7 +54,7 @@ let cards = [
     link: 'https://isobelbutler.github.io/Game/',
 
 },{
-    title: 'Movie Data',
+    title: 'Movie Database',
     description: 'F&C Application',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     imageFileName: 'movie-data.png',
@@ -72,20 +77,23 @@ function getCards(card, i) {
         <div class="card ">
             <div class="card-front">
                 <div class="card-heading center round-image">
-                    <p>${cards[i].title}</p>
+                    <!-- <p class="center-text">${cards[i].title}</p> -->
+                    <img src="images/${cards[i].imageFileName}" class="card-image round-image" alt="Project website rendered onto device">
+
+                    
                 </div>
-                <p class="card-desc">${cards[i].description}</p>
+                <p class="card-desc">${cards[i].title}</p>
                 <a href="#" class="card-btn round-image"><p>&#8594</p></a>
             </div>
 
             <div class="card-back">
-                <p class="card-heading-back">${cards[i].title}</p>
-                <div class="card-circle"></div>
+                <p class="card-heading-back center-text">${cards[i].description}</p>
+                <!-- <div class="card-circle"></div> -->
                 <p class="card-project-info">${cards[i].info}</p>
-                <img src="images/${cards[i].imageFileName}" class="card-image" alt="Project website renderd onto laptop">
+                <!-- <img src="images/${cards[i].imageFileName}" class="card-image round-image" alt="Project website renderd onto laptop"> -->
 
-                <p class="card-desc">${cards[i].description}</p>
-                <a href="#" class="card-btn round-image"><p>&#8594</p></a>
+                <p class="card-desc"></p>
+                <a href="${cards[i].link}" target="_blank" class="card-btn"><img src="images/link.png" class="round-image" alt="External link symbol"></a>
 
                 
             </div>
