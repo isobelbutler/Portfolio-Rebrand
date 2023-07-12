@@ -8,16 +8,15 @@ const cardInner = cardContainer.querySelectorAll('.card');
 let cards = [
     {title: 'Reminders App',
     description: 'F&C Project: Writing Tests',
-    info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    focuses: ['Blonk', 'Taking a mobile-first approach', 'Practicising the Git workflow'],
-
+    info: 'A collaborative reminders list tracker with create, delete, complete, and toggle functions.',
+    focuses: ['Creating automated tests that cover the key functions of the app.'],
     imageFileName: 'reminders2.png',
     link: 'https://eunbyulna.github.io/FAC-TEST/'
 }, {
     title: 'API Requests',
     description: 'F&C Project: HTTP',
-    info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    focuses: ['Writing semantic HTML to aid accessibility', 'Taking a mobile-first approach', 'Practicising the Git workflow'],
+    info: 'A collaborative space/Earth comparison app that queries three APIs and uses the results to update the DOM. The user can sort and filter the received data.',
+    focuses: ['Managing asynchronous tasks.', 'Sending HTTP requests using JavaScript and receiving responses.'],
 
     imageFileName: 'space-news-form.png',
     link: 'https://isobelbutler.github.io/Space-News-Project/'
@@ -26,15 +25,15 @@ let cards = [
     title: 'Travel Agency',
     description: 'F&C Project: Git and GitHub',
     info: 'A collaborative project for a fake travel agency.',
-    focuses: ['Writing semantic HTML to aid accessibility', 'Taking a mobile-first approach', 'Practicising the Git workflow'],
+    focuses: ['Writing semantic HTML to aid accessibility.', 'Taking a mobile-first approach.', 'Practicising the Git workflow.'],
     imageFileName: 'travel-agency.png',
     link: 'https://fac28.github.io/Thornberry-Adventure-Agency/'
 
 },{
     title: 'Soak Services',
     description: 'Professional Project',
-    info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    focuses: ['Writing semantic HTML to aid accessibility', 'Taking a mobile-first approach', 'Practicising the Git workflow'],
+    info: 'A clean, informative website for Soak Services to enhance their online presence. I worked closely with the Soak Services team to ensure seamless integration of visual assets and alignment with brand guidelines.',
+    focuses: [],
 
     imageFileName: 'soak-services.png',
     link: 'https://www.soak.services/'
@@ -43,7 +42,7 @@ let cards = [
     title: 'Wealden Green Party',
     description: 'Professional Project',
     info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    focuses: ['Writing semantic HTML to aid accessibility', 'Taking a mobile-first approach', 'Practicising the Git workflow'],
+    focuses: ['Writing semantic HTML to aid accessibility.', 'Taking a mobile-first approach', 'Practicising the Git workflow'],
 
     imageFileName: 'wealden.png',
     link: 'https://wealden.greenparty.org.uk/',
@@ -69,8 +68,8 @@ let cards = [
 },{
     title: 'Movie Database',
     description: 'F&C Application',
-    info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    focuses: ['Writing semantic HTML to aid accessibility', 'Taking a mobile-first approach', 'Practicising the Git workflow'],
+    info: 'A UI which is populated with the data from a movie database JavaScript object. Users can add their own film and toggle the displayed information.',
+    focuses: ['Render the data onto the webpage with DOM Manipulation.', 'Allow the user to affect the display of the data by interacting with the webpage.'],
 
     imageFileName: 'movie-data.png',
     link: 'https://isobelbutler.github.io/Movie-Data/',
@@ -129,18 +128,23 @@ function getCards(card, i) {
 cards.forEach(getCards);
 cardContainer.innerHTML = cardHtml;
 
-function createList(){
-    
+// Iterates through the focuses of each item in the card array and renders them on the DOM
+function createList(){    
     for (let i = 0; i < cards.length; i++) {
-        let cardFocus = document.querySelectorAll('.focus-list');
-        let focuses = cards[i].focuses;
+        let focusContainer = document.querySelectorAll('.focus-list');
+        let focus = cards[i].focuses;
         
-        for (let j = 0; j < focuses.length; j++) {
-            var li = document.createElement('li');
-            li.innerText = focuses[j];
-            cardFocus[i].appendChild(li);
+        if (focus.length > 0) {
+            focusContainer[i].insertAdjacentHTML('beforebegin', '<p>Focuses:</p>');
         }
-}
+
+        for (let j = 0; j < focus.length; j++) {
+            var li = document.createElement('li');
+            li.innerText = focus[j];
+            focusContainer[i].appendChild(li);
+            
+        }
+    }
 }
 
 createList();
