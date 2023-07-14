@@ -1,4 +1,4 @@
-let baseURL = 'file:///Users/isobelbutler/Library/Mobile%20Documents/com~apple~CloudDocs/Coding/Websites/portfolio/index.html';
+let baseURL = 'https://isobelbutler.github.io/Portfolio-Rebrand/';
 
 console.log('Contact script running');
 
