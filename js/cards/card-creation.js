@@ -31,7 +31,7 @@ let cards = [
 
 },{
     title: 'Soak Services',
-    description: 'Professional Project',
+    description: 'Client Website',
     info: 'A clean, informative website for Soak Services to enhance their online presence. I worked closely with the Soak Services team to ensure seamless integration of visual assets and alignment with brand guidelines.',
     focuses: [],
 
@@ -39,10 +39,10 @@ let cards = [
     link: 'https://www.soak.services/'
 
 },{
-    title: 'Wealden Green Party',
-    description: 'Professional Project',
-    info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    focuses: ['Writing semantic HTML to aid accessibility.', 'Taking a mobile-first approach', 'Practicising the Git workflow'],
+    title: 'Green Party',
+    description: 'Client Website',
+    info: 'Completely redesigned the Green Party constituency website, executing a seamless migration to the WordPress platform and delivering substantial enhancements to navigation and user experience. Worked with WordPress templates to facilitate quick news and article updates for the client, effectively streamlining their content management process.',
+    focuses: [],
 
     imageFileName: 'wealden.png',
     link: 'https://wealden.greenparty.org.uk/',
@@ -50,17 +50,16 @@ let cards = [
 },{
     title: 'Personal Website',
     description: 'F&C Application',
-    info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    focuses: ['Writing semantic HTML to aid accessibility', 'Taking a mobile-first approach', 'Practicising the Git workflow'],
-
+    info: 'My Founders and Coders main website application, complete with links to all other applicaton projects.',
+    focuses: ['Create a slick website that expresses who I am visually and verbally.', 'Share why I\'d like to move into a career as a web developer.'],
     imageFileName: 'application-website.png',
     link: 'https://isobelbutler.github.io/Website/',
 
 },{
     title: 'Farming Game',
     description: 'F&C Application',
-    info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    focuses: ['Writing semantic HTML to aid accessibility', 'Taking a mobile-first approach', 'Practicising the Git workflow'],
+    info: 'I built a simple farming game where a user collects gold coins by sowing and harvesting crops.',
+    focuses: ['Write modular code that is reusable and repeatable.'],
 
     imageFileName: 'farm-game.png',
     link: 'https://isobelbutler.github.io/Game/',
@@ -68,8 +67,8 @@ let cards = [
 },{
     title: 'Movie Database',
     description: 'F&C Application',
-    info: 'A UI which is populated with the data from a movie database JavaScript object. Users can add their own film and toggle the displayed information.',
-    focuses: ['Render the data onto the webpage with DOM Manipulation.', 'Allow the user to affect the display of the data by interacting with the webpage.'],
+    info: 'Built a UI which is populated with the data from a movie database JavaScript object. Users can add their own film and toggle the displayed information.',
+    focuses: ['Rendering the data onto the webpage with DOM Manipulation.', 'Allowing the user to update and interact with the data.'],
 
     imageFileName: 'movie-data.png',
     link: 'https://isobelbutler.github.io/Movie-Data/',
@@ -77,9 +76,8 @@ let cards = [
 },{
     title: 'Hobby Page',
     description: 'F&C Application',
-    info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    focuses: ['Writing semantic HTML to aid accessibility', 'Taking a mobile-first approach', 'Practicising the Git workflow'],
-
+    info: 'Tasked with building a page dedicated to a hobby, I created a guide to the Sea to Sea cycling tour. Built with HTML, styled with CSS and uses a bit of JavaScript.',
+    focuses: [],
     imageFileName: 'hobby-page.png',
     link: 'https://isobelbutler.github.io/Hobby-Page/',
 
@@ -141,8 +139,7 @@ function createList(){
         for (let j = 0; j < focus.length; j++) {
             var li = document.createElement('li');
             li.innerText = focus[j];
-            focusContainer[i].appendChild(li);
-            
+            focusContainer[i].appendChild(li);    
         }
     }
 }

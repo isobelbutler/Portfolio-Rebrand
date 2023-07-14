@@ -96,15 +96,15 @@
         <h5 class="center-text">Want to work together, find out more, or just shoot me a question?</h5>
 
         <!-- <form method="post" action="sendmail.php"> -->
-        <form>
+        <form id="contact-form" method="POST" action="send" enctype="multipart/form-data">
             <label for="form-name">Your name</label>
-            <input type="text" class="form-control" name="name" id="form-name" placeholder="What's your name?">
+            <input type="text" class="form-control" name="name" id="form-name" placeholder="What's your name?" required>
 
             <label for="form-email">Your email</label>
-            <input type="email" class="form-control" name="email" id="form-email" placeholder="email@hello.com">
+            <input type="email" class="form-control" name="email" id="form-email" placeholder="email@hello.com" required>
 
             <label for="form-message">Message</label>
-            <input type="text" class="form-control" name="message" id="form-message" placeholder="Tell me a bit about how I can help.">
+            <input type="text" class="form-control" name="message" id="form-message" placeholder="Tell me a bit about how I can help." required>
 
             <button type="submit" name="submit" class="btn black-border form-control">Let's get started!</button>
         </form>
