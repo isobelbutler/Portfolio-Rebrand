@@ -1,4 +1,4 @@
-let baseURL = 'http://127.0.0.1:5500/index.html';
+let baseURL = 'file:///Users/isobelbutler/Library/Mobile%20Documents/com~apple~CloudDocs/Coding/Websites/portfolio/index.html';
 
 console.log('Contact script running');
 
@@ -10,10 +10,10 @@ const formEvent = form.addEventListener('submit', (e) => {
     sendMail(email);
 })
 
-const sendMail = (email) => {
+const sendMail = (mail) => {
     fetch(`${baseURL}/send`, {
         method: 'POST',
-        body: email,
+        body: mail,
     }).then((response) => {
         return response.json();
     });
