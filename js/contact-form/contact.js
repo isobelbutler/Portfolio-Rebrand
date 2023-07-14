@@ -1,4 +1,4 @@
-let baseURL = 'https://isobelbutler.github.io/Portfolio-Rebrand/';
+let baseURL = 'https://isobelbutler.github.io/Portfolio-Rebrand';
 
 console.log('Contact script running');
 
