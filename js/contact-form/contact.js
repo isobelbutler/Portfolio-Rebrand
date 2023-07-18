@@ -9,9 +9,9 @@ closeButton.addEventListener('click', closePopup);
 
 form.addEventListener('submit', openPopup);
 
-function openPopup() {
+function openPopup(event) {
   // Prevent the default form submission
-  //   event.preventDefault();
+  event.preventDefault();
 
   // Show the popup
   popup.style.display = 'flex';
