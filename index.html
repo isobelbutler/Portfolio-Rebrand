@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Isobel Butler</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/squares.css">
-    <link rel="stylesheet" href="css/about-skills.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/squares.css" />
+    <link rel="stylesheet" href="css/about-skills.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <main>
       <nav>
         <!-- Generate <> with JS -->
-        <ul><a href="#about" class="brackets">About</a></ul>
-        <ul><a href="#projects" class="brackets">Projects</a></ul>
-        <ul><a href="#contact" class="black-border brackets">Contact</a></ul>
+        <ul>
+          <a href="#about" class="brackets">About</a>
+        </ul>
+        <ul>
+          <a href="#projects" class="brackets">Projects</a>
+        </ul>
+        <ul>
+          <a href="#contact" class="black-border brackets">Contact</a>
+        </ul>
       </nav>
 
       <!-- Think about which headings are semantically most important -->
@@ -29,8 +39,9 @@
         <div class="hero-body">
           <h1>isobel</h1>
           <h2>
-            Sharp, creative Software Developer with a TV Art Department background. <br>
-            Design, language, and logic make me happy.<br>
+            Sharp, creative Software Developer with a TV Art Department
+            background. <br />
+            Design, language, and logic make me happy.<br />
           </h2>
           <!-- Tagged as link vs button as is only aesthetically a button -->
           <a href="#contact" class="action-button black-border">Contact</a>
@@ -42,9 +53,14 @@
 
       <section class="projects" id="projects">
         <h3>
-          Currently in training with <a href="https://www.foundersandcoders.com/" target="_blank">Founders and Coders</a>
+          Currently in training with
+          <a href="https://www.foundersandcoders.com/" target="_blank"
+            >Founders and Coders</a
+          >
         </h3>
-        <p class="center-text">Check out some selected professional and personal projects.</p>
+        <p class="center-text">
+          Check out some selected professional and personal projects.
+        </p>
 
         <!-- Could generate this in JS instead -->
         <div class="card-container">
@@ -54,22 +70,27 @@
 
       <section class="about" id="about">
         <div class="about-grid">
-        <h4 class="about-title">About</h4>
-        <div class="about-body">
-          <p>
-            I’ve always loved maths, logic, design, and language and for me, coding is at the intersect of all these pleasures.
-          </p>
-          <p>
-            I love the challenge of trying to figure out clean ways to make things more efficient. 
-          </p>
-          <p> 
-            Post TV Art Department career I started building websites and quickly realised that as well as loving visual design, I also love building the behind the scenes - 
-            of finding elegant ways to make everything work and coming up with neat solutions to the problems that occur along the way. 
-          </p>
-        </div>
-        <!-- <div class="about-arrow"><p>&#8594</p></div> -->
+          <h4 class="about-title">About</h4>
+          <div class="about-body">
+            <p>
+              I’ve always loved maths, logic, design, and language and for me,
+              coding is at the intersect of all these pleasures.
+            </p>
+            <p>
+              I love the challenge of trying to figure out clean ways to make
+              things more efficient.
+            </p>
+            <p>
+              Post TV Art Department career I started building websites and
+              quickly realised that as well as loving visual design, I also love
+              building the behind the scenes - of finding elegant ways to make
+              everything work and coming up with neat solutions to the problems
+              that occur along the way.
+            </p>
+          </div>
+          <!-- <div class="about-arrow"><p>&#8594</p></div> -->
 
-        <!-- <h4 class="skills-title">Skills</h4>
+          <!-- <h4 class="skills-title">Skills</h4>
         <ul class="skills-list">
           <li>
             <p>Finding patterns, creative problem-solving, and logical thinking.</p>
@@ -84,7 +105,7 @@
             <p>Language. I studied English Language and Literature at the University of Leeds and love finding patterns and analysing their implications.</p>
           </li>
         </ul> -->
-      </div>
+        </div>
       </section>
 
       <!-- <section class="divider">
@@ -92,28 +113,61 @@
       </section> -->
 
       <section class="contact" id="contact">
-  
-        <h5 class="center-text">Want to work together, find out more, or just shoot me a question?</h5>
+        <h5 class="center-text">
+          Want to work together, find out more, or just shoot me a question?
+        </h5>
 
         <!-- <form method="post" action="sendmail.php"> -->
-        <form id="contact-form" method="POST" action="send" enctype="multipart/form-data">
-            <label for="form-name">Your name</label>
-            <input type="text" class="form-control" name="name" id="form-name" placeholder="What's your name?" required>
+        <form
+          id="contact-form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          onSubmit="submit"
+        >
+          <label for="form-name">Your name</label>
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            id="form-name"
+            placeholder="What's your name?"
+            required
+          />
 
-            <label for="form-email">Your email</label>
-            <input type="email" class="form-control" name="email" id="form-email" placeholder="email@hello.com" required>
+          <label for="form-email">Your email</label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            id="form-email"
+            placeholder="email@hello.com"
+            required
+          />
 
-            <label for="form-message">Message</label>
-            <input type="text" class="form-control" name="message" id="form-message" placeholder="Tell me a bit about how I can help." required>
+          <label for="form-message">Message</label>
+          <input
+            type="text"
+            class="form-control"
+            name="message"
+            id="form-message"
+            placeholder="Tell me a bit about how I can help."
+            required
+          />
 
-            <button type="submit" value="submit" name="submit" class="btn black-border form-control">Let's get started!</button>
+          <button
+            type="submit"
+            value="submit"
+            name="submit"
+            class="btn black-border form-control"
+          >
+            Let's get started!
+          </button>
         </form>
 
         <!-- <img src="images/lime-phone Background Removed.png" class="green-phone" alt="Old-style green telephone"> -->
       </section>
-
     </main>
-	
   </body>
   <script src="js/main.js"></script>
   <script src="js/navbar/navlink-styling.js"></script>
@@ -121,7 +175,4 @@
   <script src="js/cards/card-resizing.js"></script>
   <script src="js/cards/card-flip.js"></script>
   <script src="js/contact-form/contact.js"></script>
-
-  
-  
 </html>
