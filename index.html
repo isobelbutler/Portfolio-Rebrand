@@ -122,9 +122,11 @@
           id="contact-form"
           name="contact"
           method="POST"
+          data-netlify-honeypot="bot-field"
           data-netlify="true"
           onSubmit="submit"
         >
+          <input class="hidden" name="bot-field" />
           <label for="form-name">Your name</label>
           <input
             type="text"
