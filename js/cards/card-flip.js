@@ -1,12 +1,12 @@
 const firstCard = cardContainer.querySelector('.card');
 
-function firstCardToggleOn () {
+function firstCardToggleOn() {
   firstCard.classList.toggle('flipCard');
 }
 
 // firstCardToggleOn();
 
-cardContainer.querySelectorAll('.card').forEach(card => {
+cardContainer.querySelectorAll('.card').forEach((card) => {
   card.addEventListener('mouseenter', () => {
     card.classList.toggle('flipCard');
   });
@@ -21,7 +21,6 @@ cardContainer.querySelectorAll('.card').forEach(card => {
 });
 
 // Could be worth adding something to tell a mobile-user to click on a card
-
 
 //   // Define a function for the card click event
 // function handleCardClick(e) {
