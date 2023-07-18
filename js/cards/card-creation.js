@@ -93,7 +93,7 @@ let cards = [
   {
     title: 'Hobby Page',
     description: 'F&C Application',
-    info: 'Tasked with building a page dedicated to a hobby, I created a guide to the Sea to Sea cycling tour. Built with HTML, styled with CSS and uses a bit of JavaScript.',
+    info: 'Tasked with building a page dedicated to a hobby, I created a guide to the Sea to Sea cycling tour. Built with HTML, CSS, and JavaScript.',
     focuses: [],
     imageFileName: 'hobby-page.png',
     link: 'https://isobelbutler.github.io/Hobby-Page/',
