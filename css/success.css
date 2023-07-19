@@ -7,7 +7,7 @@
   background: none;
 }
 
-.contact {
+.contact-success {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -16,9 +16,9 @@
   justify-content: center;
 }
 
-.contact a {
+.contact-success a {
   padding: 1rem;
 }
-.contact > * {
+.contact-success > * {
   padding-bottom: var(--s-padding);
 }
