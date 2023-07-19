@@ -33,8 +33,8 @@ text {
 }
 
 ::placeholder {
-  /* color: #80C0B6; */
-  /* color: var(--brick); */
+  color: #ECECEC; */
+  /* color: var(--brick);
 }
 
 button[type='submit'] {

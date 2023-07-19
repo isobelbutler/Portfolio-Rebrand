@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/squares.css" />
     <link rel="stylesheet" href="css/about-skills.css" />
     <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/success.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +21,7 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <main>
+    <main class="success-only">
       <nav>
         <!-- Generate <> with JS -->
         <ul>
@@ -35,17 +36,21 @@
       </nav>
 
       <!-- Think about which headings are semantically most important -->
-      <section class="hero" id="hero">
-        <p>Submitted</p>
-
+      <section class="contact" id="contact">
+        <h5 class="center-text">
+          Thanks for getting in touch, I'll get back to you shortly!
+        </h5>
+        <a href="/index.html" class="center black-border" id="go-home-btn"
+          >Return home?</a
+        >
         <!-- <img src="images/lime-phone Background Removed.png" class="green-phone" alt="Old-style green telephone"> -->
       </section>
     </main>
   </body>
   <script src="js/main.js"></script>
   <script src="js/navbar/navlink-styling.js"></script>
-  <script src="js/cards/card-creation.js"></script>
+  <!-- <script src="js/cards/card-creation.js"></script>
   <script src="js/cards/card-resizing.js"></script>
-  <script src="js/cards/card-flip.js"></script>
+  <script src="js/cards/card-flip.js"></script> -->
   <script src="js/contact-form/contact.js"></script>
 </html>

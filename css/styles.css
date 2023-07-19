@@ -110,6 +110,10 @@ h5 {
   justify-content: center;
 }
 
+.center-vert {
+  align-content: center;
+}
+
 .italic {
   font-style: italic;
 }

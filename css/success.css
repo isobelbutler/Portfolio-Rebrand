@@ -1,0 +1,24 @@
+.success-only {
+  background-image: url(../images/snowy-mint.png);
+  background-size: cover;
+}
+
+.success-only > * {
+  background: none;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: -4rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact a {
+  padding: 1rem;
+}
+.contact > * {
+  padding-bottom: var(--s-padding);
+}
