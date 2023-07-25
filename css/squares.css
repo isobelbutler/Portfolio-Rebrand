@@ -1,35 +1,51 @@
-
 .square {
-    width: var(--square);
-    height: var(--square);
-    background-color: #44AF94;
-    position: absolute;
+  width: var(--square);
+  height: var(--square);
+  background-color: #44af94;
+  position: absolute;
+  opacity: 70%;
 }
 
 .sq-one {
-    bottom: calc((var(--square) * -0.2));
-    right: calc((2* var(--square)) + var(--sq-offset));
-    /* background-color: var(--lighter-green); */
-    background-image: url(../images/wisteria.png);
-    background-size: cover;
+  bottom: calc((var(--square) * -0.2));
+  right: calc((2 * var(--square)) + var(--sq-offset));
+  /* background-color: var(--lighter-green); */
+  background-image: url(../images/wisteria.png);
+  background-size: cover;
 }
 
 .sq-two {
-    bottom: calc((var(--square) * 0.4));
-    right: calc(var(--square) + var(--sq-offset));
-    background-color: var(--deeper-green);
-    color: #fff;
+  bottom: calc((var(--square) * 0.4));
+  right: calc(var(--square) + var(--sq-offset));
+  background-color: var(--deeper-green);
+  color: #fff;
 }
 
 .sq-three {
-    bottom: calc(var(--square) * 1);
-    right: var(--sq-offset);
-    background-color: #fff;
-    color: var(--lime);
+  bottom: calc(var(--square) * 1);
+  right: var(--sq-offset);
+  background-color: #fff;
+  color: var(--lime);
 }
 
 .square p {
+  font-size: 7em;
+  text-align: center;
+  margin: auto 0;
+}
+
+@media (min-width: 1100px) {
+  .square {
+    opacity: 100%;
+  }
+
+  :root {
+    /* sizing */
+    --square: 320px;
+    --sq-offset: -120px;
+  }
+
+  .square p {
     font-size: 13em;
-    text-align: center;
-    margin: auto 0;
+  }
 }

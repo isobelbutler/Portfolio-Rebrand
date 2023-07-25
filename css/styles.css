@@ -18,8 +18,8 @@
   --s-card-padding: 2rem;
 
   /* sizing */
-  --square: 320px;
-  --sq-offset: -120px;
+  --square: 200px;
+  --sq-offset: -80px;
 
   /* fonts */
   --s-letter-spacing: -0.3px;
@@ -38,6 +38,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  padding: 0;
+}
+
 nav a,
 .hero a {
   text-transform: lowercase;
@@ -49,20 +53,21 @@ a:hover {
 }
 
 h1 {
-  font-size: 12rem;
+  font-size: 6rem;
+  letter-spacing: -5px;
   font-weight: 700;
-  letter-spacing: -10px;
   margin: 0;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  display: none;
 }
 
 h3 {
+  width: 95%;
+  font-size: 2rem;
   margin: 0 auto;
-  width: 50%;
-  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -126,14 +131,16 @@ h5 {
 /* general */
 
 section {
-  padding: var(--xl-padding);
+  padding: var(--m-padding) var(--s-padding);
   min-height: 100vh;
   overflow: auto;
 }
 
 section:first-of-type {
   overflow: hidden;
-  padding: 0 var(--m-padding);
+  padding: var(--s-padding) var(--m-padding);
+  display: flex;
+  align-items: center;
 }
 
 section:not(:first-of-type) > *:not(:first-child) {
@@ -142,16 +149,19 @@ section:not(:first-of-type) > *:not(:first-child) {
 
 .hero-body > * {
   padding-bottom: var(--s-padding);
-  display: inline-block;
+  /* display: inline-block; */
+  z-index: 99;
+  position: relative;
 }
 
 nav {
   background-color: var(--darker-grey-bg);
-  display: flex;
+  display: none;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: end;
+  justify-content: center;
   padding: 0.5rem 2rem;
+  flex-direction: column;
+  align-items: center;
 }
 
 nav a:last-child {
@@ -166,7 +176,13 @@ nav a:last-child {
 }
 
 .hero-body {
-  width: 50%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .action-button {
@@ -189,3 +205,50 @@ nav a:last-child {
     background-size: cover;
     min-height: 50vh;
 } */
+
+@media (min-width: 1150px) {
+  section {
+    padding: var(--xl-padding);
+  }
+}
+
+@media (min-width: 600px) {
+  section:first-of-type {
+    display: block;
+  }
+
+  nav {
+    display: flex;
+  }
+  .hero-body {
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 12rem;
+    font-weight: 700;
+    letter-spacing: -10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+
+  h3 {
+    width: 50%;
+    font-size: 2.5rem;
+  }
+
+  nav {
+    justify-content: end;
+    gap: 20px;
+    flex-direction: row;
+  }
+
+  section:first-of-type {
+    padding: 0 var(--m-padding);
+  }
+}

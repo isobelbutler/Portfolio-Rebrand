@@ -5,7 +5,7 @@
 }
 
 .card {
-  width: calc((100% / 3) - (2 * var(--xs-padding)));
+  width: calc((100% / 1) - (2 * var(--xs-padding)));
   margin: var(--xs-padding);
   position: relative;
   transform-style: preserve-3d;
@@ -157,4 +157,16 @@
 
 .card-project-info {
   font-weight: 300;
+}
+
+@media (min-width: 600px) {
+  .card {
+    width: calc((100% / 2) - (2 * var(--xs-padding)));
+  }
+}
+
+@media (min-width: 950px) {
+  .card {
+    width: calc((100% / 3) - (2 * var(--xs-padding)));
+  }
 }
