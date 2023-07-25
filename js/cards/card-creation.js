@@ -12,6 +12,7 @@ let cards = [
     info: 'A collaborative reminders list tracker with create, delete, complete, and toggle functions.',
     focuses: [
       'Creating automated tests that cover the key functions of the app.',
+      'Test-Driven Development.',
     ],
     imageFileName: 'reminders2.png',
     link: 'https://eunbyulna.github.io/FAC-TEST/',

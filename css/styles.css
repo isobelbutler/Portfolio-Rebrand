@@ -50,6 +50,11 @@ nav a,
   text-transform: lowercase;
 }
 
+.unbulleted {
+  list-style-type: none;
+  columns: 3;
+}
+
 /* .hero a {
   box-shadow: var(--generic-shadow);
 } */
@@ -95,7 +100,8 @@ a {
 }
 
 .projects > h3,
-p {
+.projects > p,
+.projects > ul {
   width: 60%;
   margin: 1rem auto;
 }
@@ -110,7 +116,7 @@ h5 {
 
 .card-back .card-btn,
 .card-back .card-desc {
-  color: #fff;
+  color: var(--deeper-green);
 }
 
 /* repeatables */
