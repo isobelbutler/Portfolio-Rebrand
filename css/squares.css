@@ -3,7 +3,7 @@
   height: var(--square);
   background-color: #44af94;
   position: absolute;
-  opacity: 70%;
+  /* opacity: 70%; */
 }
 
 .sq-one {
