@@ -230,6 +230,7 @@ nav a:last-child {
 
 .contact {
   background-image: url(../images/snowy-mint.png);
+  /* background-color: var(--lime); */
   background-size: cover;
 }
 
@@ -251,9 +252,9 @@ nav a:last-child {
 }
 
 @media (min-width: 600px) {
-  section:first-of-type {
+  /* section:first-of-type {
     display: block;
-  }
+  } */
 
   nav {
     display: flex;

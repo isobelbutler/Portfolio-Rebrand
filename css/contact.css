@@ -6,6 +6,10 @@
   margin: 0 auto;
 }
 
+/* .contact {
+  background-color: white;
+} */
+
 form > * {
   display: block;
   width: 100%;
@@ -13,7 +17,7 @@ form > * {
 }
 
 .form-control {
-  background-color: white;
+  /* background-color: var(--light-grey-bg); */
   border: none;
   border-radius: 10px;
   padding: var(--xs-padding);
