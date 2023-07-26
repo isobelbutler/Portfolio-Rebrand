@@ -1,7 +1,7 @@
 /* grid layout */
 
 .about {
-  background-color: (--darker-grey-bg);
+  background-color: var(--darker-grey-bg);
 }
 
 .about-grid {
