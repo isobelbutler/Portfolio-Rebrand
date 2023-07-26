@@ -34,8 +34,14 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background-image: url(../images/snowy-mint.png);
+  background-size: cover;
+}
+
 main {
-  max-width: 1800px;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 /* fonts */

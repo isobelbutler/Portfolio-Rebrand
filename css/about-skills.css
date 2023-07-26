@@ -1,5 +1,9 @@
 /* grid layout */
 
+.about {
+  background-color: (--darker-grey-bg);
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
