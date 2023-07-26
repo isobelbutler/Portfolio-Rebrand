@@ -9,10 +9,10 @@ let cards = [
   {
     title: 'Reminders App',
     description: 'F&C Project: Writing Tests',
-    info: 'A collaborative reminders list tracker with create, delete, complete, and toggle functions.',
+    info: 'Build and write tests for a collaborative reminders tracker with create, delete, complete, and toggle functions.',
     focuses: [
-      'Creating automated tests that cover the key functions of the app.',
-      'Test-Driven Development.',
+      'Create automated tests that cover the key functions of the app.',
+      'Practice Test-Driven Development.',
     ],
     imageFileName: 'reminders2.png',
     link: 'https://eunbyulna.github.io/FAC-TEST/',
@@ -20,10 +20,10 @@ let cards = [
   {
     title: 'API Requests',
     description: 'F&C Project: HTTP',
-    info: 'A collaborative space/Earth comparison app that queries three APIs and uses the results to update the DOM. The user can sort and filter the received data.',
+    info: 'Build a collaborative app that queries three APIs and uses the results to update the DOM. The user must be able to sort and filter the received data.',
     focuses: [
-      'Managing asynchronous tasks.',
-      'Sending HTTP requests using JavaScript and receiving responses.',
+      'Manage asynchronous tasks.',
+      'Send HTTP requests using JavaScript and receive responses.',
     ],
 
     imageFileName: 'space-news-form.png',
@@ -32,11 +32,12 @@ let cards = [
   {
     title: 'Travel Agency',
     description: 'F&C Project: Git and GitHub',
-    info: 'A collaborative project for a fake travel agency.',
+    info: 'Create an agency website in collaboration with one of my Founders and Coders peers.',
     focuses: [
-      'Writing semantic HTML to aid accessibility.',
-      'Taking a mobile-first approach.',
-      'Practicising the Git workflow.',
+      'Accessible, semantic HTML.',
+      'Well-organised CSS.',
+      'Mobile-first approach.',
+      'Practice the Git/GitHub workflow.',
     ],
     imageFileName: 'travel-agency.png',
     link: 'https://fac28.github.io/Thornberry-Adventure-Agency/',
@@ -44,7 +45,7 @@ let cards = [
   {
     title: 'Soak Services',
     description: 'Client Website',
-    info: 'A clean, informative website for Soak Services to enhance their online presence. I worked closely with the Soak Services team to ensure seamless integration of visual assets and alignment with brand guidelines.',
+    info: 'Design and build a clean, informative website for Soak Services, an infiltration testing company based in South-East England, to enhance their online presence.',
     focuses: [],
 
     imageFileName: 'soak-services.png',
@@ -53,8 +54,8 @@ let cards = [
   {
     title: 'Green Party',
     description: 'Client Website',
-    info: 'Completely redesigned the Green Party constituency website, executing a seamless migration to the WordPress platform and delivering substantial enhancements to navigation and user experience. Worked with WordPress templates to facilitate quick news and article updates for the client, effectively streamlining their content management process.',
-    focuses: [],
+    info: 'Redesign the Green Party constituency website, and migrate it to the WordPress platform.<p></p>I streamlined their content management process with WordPress templates to allow quick news and article updates.',
+    focuses: ['Enhance navigation and the user experience.'],
 
     imageFileName: 'wealden.png',
     link: 'https://wealden.greenparty.org.uk/',
@@ -62,10 +63,10 @@ let cards = [
   {
     title: 'Personal Website',
     description: 'F&C Application',
-    info: 'My Founders and Coders main website application, complete with links to all other applicaton projects.',
+    info: "Design and build a personal website which tells Founders and Coders about myself, why I want to attend the programme, and why I'd like to move into a career as a web developer.",
     focuses: [
-      'Create a slick website that expresses who I am visually and verbally.',
-      "Share why I'd like to move into a career as a web developer.",
+      'Create a visually appealing user experience.',
+      'Link to all other application projects.',
     ],
     imageFileName: 'application-website.png',
     link: 'https://isobelbutler.github.io/Website/',
@@ -73,7 +74,7 @@ let cards = [
   {
     title: 'Farming Game',
     description: 'F&C Application',
-    info: 'I built a simple farming game where a user collects gold coins by sowing and harvesting crops.',
+    info: 'Build a game using HTML, CSS and JavaScript and explore creating something with different complex parts that interact with each other. I chose to build a farming game where a user collects gold coins by sowing and harvesting crops.',
     focuses: ['Write modular code that is reusable and repeatable.'],
 
     imageFileName: 'farm-game.png',
@@ -82,10 +83,11 @@ let cards = [
   {
     title: 'Movie Database',
     description: 'F&C Application',
-    info: 'Built a UI which is populated with the data from a movie database JavaScript object. Users can add their own film and toggle the displayed information.',
+    info: 'Build a UI that is populated with the data from a movie database JavaScript object.',
     focuses: [
-      'Rendering the data onto the webpage with DOM Manipulation.',
-      'Allowing the user to update and interact with the data.',
+      'Allow users to add their own film and interact with the data.',
+      'Render the data onto the webpage with DOM Manipulation.',
+      'Allow the user to update and interact with the data.',
     ],
 
     imageFileName: 'movie-data.png',
@@ -94,7 +96,7 @@ let cards = [
   {
     title: 'Hobby Page',
     description: 'F&C Application',
-    info: 'Tasked with building a page dedicated to a hobby, I created a guide to the Sea to Sea cycling tour. Built with HTML, CSS, and JavaScript.',
+    info: 'Build a page about one of my hobbies, a particular interest of mine, or a public figure I admire. I chose to create a guide to the Sea to Sea cycling tour. Built with HTML, CSS, and JavaScript.',
     focuses: [],
     imageFileName: 'hobby-page.png',
     link: 'https://isobelbutler.github.io/Hobby-Page/',
@@ -122,6 +124,7 @@ function getCards(card, i) {
                 <p class="card-heading-back center-text">${cards[i].description}</p>
                 <!-- <div class="card-circle"></div> -->
                 <div class="card-project-info">
+                <p>Challenge:</p>
                 <p>${cards[i].info}</p>
                 <ul class="focus-list"></ul>
                 </div>

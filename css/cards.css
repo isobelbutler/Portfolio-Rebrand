@@ -46,7 +46,7 @@
       var(--light-green-teal) 0.5px,
       transparent 1px
     ),
-    linear-gradient(to bottom, var(--light-green-teal) 0.5px, transparent 1px);
+    linear-gradient(to bottom, var(--light-green-teal) 0.5px, transparent 0.5px);
   /* background-color: var(--brick); */
 
   /* background-color: #f1e9e4; */
@@ -90,12 +90,10 @@
   grid-area: card-heading;
   border-radius: 50%;
   width: 100%;
-  /* background-color: #fff; */
   justify-self: center;
   align-self: center;
   align-items: center;
   margin: var(--s-padding);
-  /* padding: var(--s-padding); */
 }
 
 .card-heading img {
@@ -109,8 +107,6 @@
   letter-spacing: -1.5px;
   text-transform: capitalize;
   font-weight: 500;
-  /* font-style: italic; */
-  /* text-align: center; */
 }
 
 .card-desc {
