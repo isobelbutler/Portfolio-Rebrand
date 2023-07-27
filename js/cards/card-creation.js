@@ -55,8 +55,8 @@ let cards = [
     title: 'Green Party',
     description: 'Client Website',
     info: 'Redesign the Green Party constituency website, and migrate it to the WordPress platform.<p></p>I streamlined their content management process with WordPress templates to allow quick news and article updates.',
-    focuses: ['Enhance navigation and the user experience.'],
-
+    // focuses: ['Enhance navigation and the user experience.'],
+    focuses: [],
     imageFileName: 'wealden.png',
     link: 'https://wealden.greenparty.org.uk/',
   },

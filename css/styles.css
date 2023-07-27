@@ -4,9 +4,12 @@
   --darker-grey-bg: #e9e9e9;
   --deeper-green: #44af94;
   --lighter-green: #7bd4c1;
-  --light-green-teal: #bde9e4;
+  --light-green-teal: #beeae5;
   --brick: #7bd4c1;
-  --lime: #d0fe1d;
+  /* --lime: #d0fe1d; */
+  --cobalt: #0b56ff;
+  --mink: #d7c2c1;
+  --lime: #baf15d;
 
   /* padding */
   --xxs-padding: 0.25rem;
@@ -35,8 +38,15 @@
 }
 
 body {
-  background-image: url(../images/snowy-mint.png);
-  background-size: cover;
+  /* background-image: url(../images/snowy-mint.png); */
+  background-size: 30px 30px;
+  background-image: linear-gradient(
+      to right,
+      var(--lime) 0.5px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, var(--lime) 0.5px, transparent 0.5px);
+  /* background-size: cover; */
 }
 
 main {
@@ -94,7 +104,8 @@ h3 {
 }
 
 h4 {
-  font-size: 2.5rem;
+  font-size: 8rem;
+  margin: 1rem 0;
 }
 
 h2,
@@ -126,7 +137,7 @@ h5 {
 
 .card-back .card-btn,
 .card-back .card-desc {
-  color: var(--deeper-green);
+  color: white;
 }
 
 /* repeatables */
@@ -229,9 +240,17 @@ nav a:last-child {
 }
 
 .contact {
-  background-image: url(../images/snowy-mint.png);
-  /* background-color: var(--lime); */
-  background-size: cover;
+  /* background-image: url(../images/whisper.png); */
+  /* background-color: var(--cobalt); */
+  background-size: 30px 30px;
+  background-image: linear-gradient(
+      to right,
+      var(--cobalt) 0.5px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, var(--cobalt) 0.5px, transparent 0.5px);
+  background-color: white;
+  /* background-size: cover; */
 }
 
 /* .divider {
@@ -246,7 +265,7 @@ nav a:last-child {
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: inline-block;
   }
 }

@@ -42,8 +42,10 @@
           <h2>
             Sharp, creative Software Developer with a TV Art Direction
             background.
+            <!-- <br /> -->
+            <!-- Logic, design, and language make me happy. -->
           </h2>
-          <h2>Logic, design, and language make me happy.</h2>
+          <!-- <h2>Logic, design, and language make me happy.</h2> -->
           <!-- Tagged as link vs button as is only aesthetically a button -->
           <a href="#contact" class="action-button black-border">Contact</a>
         </div>
@@ -93,7 +95,7 @@
 
       <section class="about" id="about">
         <div class="about-grid">
-          <h4 class="about-title">About</h4>
+          <h4 class="about-title">about.</h4>
           <div class="about-body">
             <p>
               I’ve always loved maths, logic, design, and language and for me,
@@ -136,60 +138,62 @@
       </section> -->
 
       <section class="contact" id="contact">
-        <h5 class="center-text">
-          Want to work together, find out more, or just shoot me a question?
-        </h5>
+        <div class="contact-inner">
+          <h5 class="center-text">
+            Want to work together, find out more, or just shoot me a question?
+          </h5>
 
-        <!-- <form method="post" action="sendmail.php"> -->
-        <form
-          id="contact-form"
-          name="contact"
-          method="POST"
-          data-netlify-honeypot="bot-field"
-          data-netlify="true"
-          onSubmit="submit"
-          action="/success"
-        >
-          <input class="hidden" name="bot-field" />
-          <label for="form-name">What's your name?</label>
-          <input
-            type="text"
-            class="form-control"
-            name="name"
-            id="form-name"
-            placeholder="What's your name?"
-            required
-          />
-
-          <label for="form-email">What's your email?</label>
-          <input
-            type="email"
-            class="form-control"
-            name="email"
-            id="form-email"
-            placeholder="email@hello.com"
-            required
-          />
-
-          <label for="form-message">How can I help?</label>
-          <input
-            type="text"
-            class="form-control"
-            name="message"
-            id="form-message"
-            placeholder="Tell me a bit about how I can help."
-            required
-          />
-
-          <button
-            type="submit"
-            value="submit"
-            name="submit"
-            class="btn black-border form-control"
+          <!-- <form method="post" action="sendmail.php"> -->
+          <form
+            id="contact-form"
+            name="contact"
+            method="POST"
+            data-netlify-honeypot="bot-field"
+            data-netlify="true"
+            onSubmit="submit"
+            action="/success"
           >
-            Let's get started!
-          </button>
-        </form>
+            <input class="hidden" name="bot-field" />
+            <label for="form-name">What's your name?</label>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              id="form-name"
+              placeholder="What's your name?"
+              required
+            />
+
+            <label for="form-email">What's your email?</label>
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              id="form-email"
+              placeholder="email@hello.com"
+              required
+            />
+
+            <label for="form-message">How can I help?</label>
+            <input
+              type="text"
+              class="form-control"
+              name="message"
+              id="form-message"
+              placeholder="Tell me a bit about how I can help."
+              required
+            />
+
+            <button
+              type="submit"
+              value="submit"
+              name="submit"
+              class="btn black-border form-control"
+            >
+              Let's get started!
+            </button>
+          </form>
+        </div>
 
         <div id="popup" class="popup hidden">
           <div class="popup-content">

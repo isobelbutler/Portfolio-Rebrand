@@ -2,6 +2,13 @@
   position: relative;
 }
 
+.contact-inner {
+  background-color: var(--cobalt);
+  padding: var(--m-padding) var(--s-padding);
+  border-radius: 20px;
+  box-shadow: var(--generic-shadow);
+}
+
 .contact > * {
   margin: 0 auto;
 }
@@ -18,8 +25,8 @@ form > * {
 
 .form-control {
   /* background-color: var(--light-grey-bg); */
-  border: none;
-  border-radius: 10px;
+  /* border: none; */
+  /* border-radius: 10px; */
   padding: var(--xs-padding);
 }
 
@@ -32,27 +39,41 @@ label,
 input,
 select,
 text {
-  color: black;
+  color: white;
   /* font-style: italic; */
 }
 
+input {
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  border-top: none;
+  padding: var(--xs-padding);
+  border-right: none;
+  border-left: none;
+}
+
 ::placeholder {
-  color: white;
+  color: transparent;
   /* color: var(--brick); */
 }
 
 button[type='submit'] {
   background-color: white;
+  border: white solid 2px;
+  color: var(--cobalt);
   /* border: 1px solid var(--lime); */
 }
 
 button[type='submit']:hover {
-  background-color: var(--brick);
+  background-color: var(--cobalt);
+  color: white;
   transition: 0.5s ease;
 }
 
 .contact h5 {
-  /* color: #64AEA3; */
+  color: white;
+  padding: 1rem;
+  margin: 0 auto;
   width: 70%;
 }
 

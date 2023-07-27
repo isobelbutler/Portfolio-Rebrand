@@ -1,11 +1,12 @@
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-evenly; */
+  justify-content: center;
 }
 
 .card {
   width: calc((100% / 1) - (2 * var(--xs-padding)));
+  max-width: 360px;
   margin: var(--xs-padding);
   position: relative;
   transform-style: preserve-3d;
@@ -34,23 +35,22 @@
     'card-heading card-heading'
     'card-heading card-heading'
     'card-desc card-btn';
-  background-image: url('../images/snowy-mint.png');
-  background-size: cover;
-}
-
-.card-back {
-  height: 100%;
   background-size: 30px 30px;
   background-image: linear-gradient(
       to right,
-      var(--light-green-teal) 0.5px,
+      var(--mink) 0.5px,
       transparent 1px
     ),
-    linear-gradient(to bottom, var(--light-green-teal) 0.5px, transparent 0.5px);
-  /* background-color: var(--brick); */
+    linear-gradient(to bottom, var(--mink) 0.5px, transparent 0.5px);
+  background-color: #fff;
+}
 
-  /* background-color: #f1e9e4; */
-
+.card-back {
+  color: white;
+  height: 100%;
+  background-color: var(--cobalt);
+  /* background-image: url('../images/whisper.png');
+  background-size: cover; */
   transform: rotateY(180deg);
   grid-template-columns: 1.5fr 0.5fr;
   grid-template-rows: 0.5fr 1fr 1.5fr 0.5fr;
@@ -110,6 +110,7 @@
 }
 
 .card-desc {
+  color: var(--cobalt);
   grid-area: card-desc;
   justify-self: start;
 }
@@ -118,7 +119,8 @@
   grid-area: card-btn;
   justify-self: end;
   align-self: center;
-  border: 1px solid #000;
+  border: 1px solid var(--cobalt);
+  color: var(--cobalt);
   border-radius: 50%;
   /* padding: var(--xxs-padding) var(--xs-padding); */
 }
@@ -168,8 +170,8 @@
     width: calc((100% / 2) - (2 * var(--xs-padding)));
   }
 }
-
-@media (min-width: 950px) {
+/* between 1150px and 1400px the cards text doesn't look right */
+@media (min-width: 1400px) {
   .card {
     width: calc((100% / 3) - (2 * var(--xs-padding)));
   }
