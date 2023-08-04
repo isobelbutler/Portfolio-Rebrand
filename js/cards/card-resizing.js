@@ -14,4 +14,3 @@ function initializeCardHeight() {
 }
 
 document.addEventListener('DOMContentLoaded', initializeCardHeight);
-

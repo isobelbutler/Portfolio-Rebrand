@@ -123,11 +123,8 @@
   color: var(--cobalt);
   border-radius: 50%;
   /* padding: var(--xxs-padding) var(--xs-padding); */
-}
-
-.card-btn p,
-.card-btn img {
-  margin: calc(var(--xs-padding) * 0.5);
+  padding: var(--xs-padding);
+  margin: 0;
 }
 
 .card-btn img {

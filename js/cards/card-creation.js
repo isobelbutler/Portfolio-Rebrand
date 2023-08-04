@@ -115,7 +115,8 @@ function getCards(card, i) {
                     
                 </div>
                 <p class="card-desc">${cards[i].title}</p>
-                <a href="#" class="card-btn round-image"><p>&#8594</p></a>
+                <!-- <a href="#" class="card-btn round-image"><p>&#8594</p></a> -->
+                <p class="card-btn round-image">&#8594</p>
             </div>
 
             <div class="card-back">
@@ -162,20 +163,3 @@ function createList() {
 }
 
 createList();
-
-function setCardHeight() {
-  const cardFront = document.querySelector('.card-front');
-  const cardContainer = document.querySelector('.card-container');
-  const cardFrontHeight = cardFront.offsetHeight;
-  console.log('Card height: ' + cardFrontHeight + 'px');
-  cardContainer.querySelectorAll('.card').forEach((card) => {
-    card.style.height = cardFrontHeight + 'px';
-  });
-}
-
-function initializeCardHeight() {
-  setCardHeight();
-  window.addEventListener('resize', setCardHeight);
-}
-
-document.addEventListener('DOMContentLoaded', initializeCardHeight);

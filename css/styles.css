@@ -38,15 +38,16 @@
 }
 
 body {
-  /* background-image: url(../images/snowy-mint.png); */
-  background-size: 30px 30px;
+  background-image: url(../images/snowy-mint.png);
+  background-size: cover;
+
+  /* background-size: 30px 30px;
   background-image: linear-gradient(
       to right,
       var(--lime) 0.5px,
       transparent 1px
     ),
-    linear-gradient(to bottom, var(--lime) 0.5px, transparent 0.5px);
-  /* background-size: cover; */
+    linear-gradient(to bottom, var(--lime) 0.5px, transparent 0.5px); */
 }
 
 main {
