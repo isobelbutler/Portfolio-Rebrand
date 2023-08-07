@@ -85,8 +85,8 @@ let cards = [
     description: 'F&C Application',
     info: 'Build a UI that is populated with the data from a movie database JavaScript object.',
     focuses: [
-      'Allow users to add their own film and interact with the data.',
-      'Render the data onto the webpage with DOM Manipulation.',
+      'Allow users to add their own film and interact with the data',
+      'Render the data onto the webpage with DOM Manipulation',
       'Allow the user to update and interact with the data.',
     ],
 
@@ -155,11 +155,20 @@ function createList() {
     }
 
     for (let j = 0; j < focus.length; j++) {
+      let checked = checkFullStop(focus[j]);
       var li = document.createElement('li');
-      li.innerText = focus[j];
+      li.innerText = checked;
       focusContainer[i].appendChild(li);
     }
   }
+}
+
+function checkFullStop(sentence) {
+  if (sentence.slice(-1) !== '.') {
+    sentence = sentence + '.';
+    console.log(`Added full-stop to this sentence: ${sentence}`);
+  }
+  return sentence;
 }
 
 createList();
